@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传EXCEL</title>
+
+</head>
+<body>
+<!--block-->
+<form id="excel" method="post" action="/user/upload">
+<input type="file" id="file" name="myfile" style="display: none" />
+<input type="text" id="filename" style="display:none"></span>
+<input type="button" onclick="upload()" value="选择文件上传" />
+
+</form>
+<div>
+    <!--ajax规定不能用下载-->
+    <!--<input type="button" onclick="download()" value="导出Excel" style="width: 300px"/>-->
+    <a href="/user/download">下载 </a>
+</div>
+
+
+
+<script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="/js/excel.js"></script>
+<script type="text/javascript">
+
+
+</script>
+
+</body>
+</html>
